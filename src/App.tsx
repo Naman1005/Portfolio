@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { GithubIcon, Linkedin, Mail, ExternalLink, FileText } from 'lucide-react';
+import schoolImage from "./assets/school.jpg";
+import collegeImage from "./assets/college.jpg";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -254,14 +256,14 @@ function App() {
                   <div className="education-card">
                     <div className="relative overflow-hidden rounded-xl mb-4 md:mb-6 aspect-video">
                       <img
-                        src="/src/college.jpg"
+                        src={collegeImage}
                         alt="NIT Campus"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f1a] to-transparent"></div>
                     </div>
                     <h3 className="text-pink-300">Bachelor of Technology</h3>
-                    <h4 className="text-orange-300">Dr. B.R. National Institute of Technology • 2023 - Present</h4>
+                    <h4 className="text-orange-300">Dr. B.R. National Institute of Technology, Jalandhar • 2023 - Present</h4>
                     <p className="text-orange-200/60">
                       Pursuing Computer Science Engineering with a focus on competitive programming and software development.
                     </p>
@@ -269,14 +271,14 @@ function App() {
                   <div className="education-card">
                     <div className="relative overflow-hidden rounded-xl mb-4 md:mb-6 aspect-video">
                       <img
-                        src="/src/school.jpg"
+                        src={schoolImage}
                         alt="School Campus"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f1a] to-transparent"></div>
                     </div>
                     <h3 className="text-yellow-300">Higher Secondary Education</h3>
-                    <h4 className="text-orange-300">School • 2008 - 2023</h4>
+                    <h4 className="text-orange-300">Sacred Heart Convent School, Ludhiana • 2008 - 2023</h4>
                     <p className="text-orange-200/60">
                       Completed science stream with computer applications. Specialized in Java programming and developed a strong foundation in mathematics and science.
                     </p>
