@@ -26,12 +26,12 @@ function App() {
   const nameOpacity = 1 - (scrollPosition / (window.innerHeight * 0.5));
 
   return (
-    <div className="bg-gradient-to-b from-[#0b0b15] via-[#121630] to-[#0a1525] min-h-[200vh] relative">
+    <div className="bg-gradient-to-b from-[#030712] via-[#0f172a] to-[#020617] min-h-[200vh] relative">
       {/* Decorative Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-32 md:w-64 h-32 md:h-64 bg-pink-500/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 right-1/4 w-48 md:w-96 h-48 md:h-96 bg-orange-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/3 w-40 md:w-80 h-40 md:h-80 bg-yellow-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-32 md:w-64 h-32 md:h-64 bg-pink-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-1/3 right-1/4 w-48 md:w-96 h-48 md:h-96 bg-orange-500/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/3 w-40 md:w-80 h-40 md:h-80 bg-yellow-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
       </div>
 
@@ -44,7 +44,8 @@ function App() {
               style={{
                 fontSize: `${1.5 * Math.min(12, 6 + nameScale)}vw`,
                 opacity: Math.max(0, nameOpacity),
-                transform: `scale(${nameScale}) translateZ(${scrollPosition * 0.1}px)`
+                transform: `scale(${nameScale}) translateZ(${scrollPosition * 0.1}px)`,
+                textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
               }}
             >
               NAMAN SINGH
@@ -54,7 +55,8 @@ function App() {
               style={{
                 fontSize: `${0.3 * Math.min(10, 4 + nameScale)}vw`,
                 opacity: Math.max(0, nameOpacity),
-                transform: `scale(${nameScale}) translateZ(${scrollPosition * 0.1}px)`
+                transform: `scale(${nameScale}) translateZ(${scrollPosition * 0.1}px)`,
+                textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
               }}
             >
               PORTFOLIO
