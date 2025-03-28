@@ -103,19 +103,31 @@ function App() {
                 <h3 className="text-lg md:text-xl font-semibold text-orange-300 mb-3 md:mb-4">Competitive Programming Profiles</h3>
                 <div className="grid grid-cols-2 gap-3 md:gap-4">
                   <a href="https://codeforces.com/profile/Naman1005" className="cp-link">
-                    <h4 className="text-pink-300 font-semibold">Codeforces</h4>
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-pink-300 font-semibold">Codeforces</h4>
+                      <ExternalLink size={16} className={isDark ? "text-orange-300" : "text-blue-900"} />
+                    </div>
                     <p className="text-orange-200/60">Expert (1600+)</p>
                   </a>
                   <a href="https://www.codechef.com/users/naman1005" className="cp-link">
-                    <h4 className="text-yellow-300 font-semibold">CodeChef</h4>
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-yellow-300 font-semibold">CodeChef</h4>
+                      <ExternalLink size={16} className={isDark ? "text-orange-300" : "text-blue-900"} />
+                    </div>
                     <p className="text-orange-200/60">4★ (1800+)</p>
                   </a>
                   <a href="https://leetcode.com/u/Naman1005/" className="cp-link">
-                    <h4 className="text-orange-300 font-semibold">LeetCode</h4>
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-orange-300 font-semibold">LeetCode</h4>
+                      <ExternalLink size={16} className={isDark ? "text-orange-300" : "text-blue-900"} />
+                    </div>
                     <p className="text-orange-200/60">Knight (1900+)</p>
                   </a>
                   <a href="https://atcoder.jp/users/Naman1005" className="cp-link">
-                    <h4 className="text-purple-300 font-semibold">AtCoder</h4>
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-purple-300 font-semibold">AtCoder</h4>
+                      <ExternalLink size={16} className={isDark ? "text-orange-300" : "text-blue-900"} />
+                    </div>
                     <p className="text-orange-200/60">Cyan (1200+)</p>
                   </a>
                 </div>
