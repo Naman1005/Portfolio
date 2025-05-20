@@ -28,12 +28,22 @@ const AppContent = () => {
 
   return (
     <main className="relative min-h-screen">
-      {/* Aurora background */}
-      <div className="fixed inset-0 -z-10">
+      {/* Top Aurora background */}
+      <div className="fixed inset-x-0 top-0 h-[75vh]">
         <Aurora
           colorStops={["#ff5941", "#ff8f00", "#ff5941"]}
           blend={0.5}
-          amplitude={1.0}
+          amplitude={0.7}
+          speed={0.5}
+        />
+      </div>
+
+      {/* Bottom Aurora background */}
+      <div className="fixed inset-x-0 bottom-0 h-[85vh] rotate-180">
+        <Aurora
+          colorStops={["#ff5941", "#ff8f00", "#ff5941"]}
+          blend={0.5}
+          amplitude={0.7}
           speed={0.5}
         />
       </div>
